@@ -29,9 +29,9 @@ pip install -r requirements.txt
 
 Navigate to working folder
 Start the FastAPI server with the following command:
-    ```
+```
 fastapi run notification_dispatcher.py
-    ```
+```
 Swagger UI reference for the send_message endpoint by default can be found here: http://localhost:8000/docs#/default/send_message_message__post
 
 ### API Usage
