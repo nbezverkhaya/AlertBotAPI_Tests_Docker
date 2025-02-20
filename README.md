@@ -68,7 +68,9 @@ pytest test_notification.py  --no-header -vv
 ## Notes
 
 If you don't have a Telegram bot, you can create one by following the instructions:
-Open Telegram and search for “BotFather” in the search bar. Click on the BotFather account and select “Start.” Follow the prompts to create your bot, including giving it a name and username. Once your bot is created, BotFather will provide you with a token.
+1. Open Telegram and search for “BotFather” in the search bar.
+2. Click on the BotFather account and select “Start.” Follow the prompts to create your bot, including giving it a name and username.
+3. Once your bot is created, BotFather will provide you with a token.
 
 ## Author
 
