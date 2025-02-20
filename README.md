@@ -31,34 +31,8 @@ cd AlertBotAPI
 ```
 pip install -r requirements.txt
 ```
-### Telegram Bot Setup
 
-Telegram Bot Setup
-
-To use this bot, you need to create a Telegram bot and obtain the necessary credentials.
-
-1. Create a Telegram Bot
-
-* Open Telegram and search for BotFather.
-* Start a chat and use the command /newbot.
-* Follow the instructions to set a bot name and username.
-* After creation, you will receive a bot token. Save it for later use.
-
-2. Get Your Chat ID
-
-* Start a chat with your bot in Telegram.
-* Open the following URL in a browser, replacing <YOUR_BOT_TOKEN> with your actual bot token:
-```
-https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
-```
-* Send a message to the bot in Telegram.
-* Refresh the URL and look for "chat": {"id": <your_chat_id>} in the JSON response.
-* Copy the chat ID for later use.
-
-3. Configure config.ini
-
-* Rename the provided config.example.ini file to config.ini.
-* Open config.ini and set your bot token and chat ID:
+5. Open config.ini and set your bot token and chat ID:
 ```
 TOKEN = your_bot_token_here
 CHAT_ID = your_chat_id_here
@@ -93,8 +67,8 @@ pytest test_notification.py
 ```
 ## Notes
 
-Ensure that your Bot Token and Chat ID are correctly set in config.ini
-The application relies on Telegram's API for message delivery, so an active internet connection is required.
+If you don't have a Telegram bot, you can create one by following the instructions:
+Open Telegram and search for “BotFather” in the search bar. Click on the BotFather account and select “Start.” Follow the prompts to create your bot, including giving it a name and username. Once your bot is created, BotFather will provide you with a token.
 
 ## Author
 
