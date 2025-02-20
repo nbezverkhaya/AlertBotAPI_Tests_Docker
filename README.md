@@ -63,7 +63,7 @@ Request Body (JSON format):
 ## Running Tests
 To test the application, run:
 ```
-pytest test_notification.py
+pytest test_notification.py  --no-header -vv
 ```
 ## Notes
 
