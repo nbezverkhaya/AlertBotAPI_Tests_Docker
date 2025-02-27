@@ -16,7 +16,7 @@ git clone https://github.com/nbezverkhaya/AlertBotAPI_Tests_Docker.git
 ```
 2. Open a terminal or command prompt in the extracted folder.
 ```
-cd AlertBotAPI
+cd AlertBotAPI_Tests_Docker
 ```
 3. Create and activate a virtual environment:
    ```
