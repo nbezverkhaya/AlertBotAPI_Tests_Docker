@@ -1,15 +1,12 @@
 # FastAPI Bot Notifier
 
 This project is a FastAPI-based application that sends messages to a chat based on the message type. If the message type is `Warning`, it will be forwarded to chat; otherwise, it will be ignored.
+This project includes a Docker setup for easy deployment. You can run it either locally or within a Docker container.
 
 ## Purpose
 This project was developed as a test assignment for a job application.
 
-## Installation and Setup
-
-### Requirements
-- Python 3.7+
-- Virtual environment
+## Installation and Local Run
 
 ### Steps to Set Up
 
@@ -45,7 +42,7 @@ Start the FastAPI server with the following command:
 ```
 fastapi run notification_dispatcher.py
 ```
-Swagger UI reference for the send_message endpoint by default can be found here: http://localhost:8000/docs#/default/send_message_message__post
+Swagger UI reference for the send_message endpoint by default can be found here: http://localhost:8000/docs#/default/
 
 ### API Usage
 Endpoint: POST /message/
@@ -60,11 +57,32 @@ Request Body (JSON format):
 * If Type is "Warning", the message will be sent to Telegram.
 * If Type is anything else, the request will be ignored.
 
-## Running Tests
+## Run with Docker
+1. Build the Docker image:
+````
+docker build -t alert_bot_api_tests .
+````
+2. Run the container:
+````
+docker run -p 8000:80 alert_bot_api_tests
+````
+
+## Running Tests (Local Run)
 To test the application, run:
+
 ```
 pytest test_notification.py  --no-header -vv
 ```
+
+## Running Tests with Docker
+To test the application, run:
+````
+docker exec -it your_container_name /bin/bash
+````
+```
+pytest test_notification.py  --no-header -vv
+```
+
 ## Notes
 
 If you don't have a Telegram bot, you can create one by following the instructions:

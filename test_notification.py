@@ -16,7 +16,6 @@ def test_send_info_message():
     assert response.status_code == 200
     assert response.json() == {'status': 'message acknowledged'}
 
-
 def test_send_warning_message():
     message = data.warning
 
@@ -24,7 +23,6 @@ def test_send_warning_message():
 
     assert response.status_code == 200
     assert response.json() == {'status': 'attempt to send message to chat successful'}
-
 
 def test_send_bad_configured_message():
     message = data.bad_structure

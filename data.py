@@ -9,3 +9,6 @@ info = {
 bad_structure = {
     "Type": "Info", "_Name": "Quota Exceeded", "Description": "Compute Quota exceeded"
 }
+
+
+# BASE_URL=http://localhost:8000/message/
