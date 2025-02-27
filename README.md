@@ -12,7 +12,7 @@ This project was developed as a test assignment for a job application.
 
 1. Clone the repository:
 ```
-git clone https://github.com/nbezverkhaya/AlertBotAPI.git
+git clone https://github.com/nbezverkhaya/AlertBotAPI_Tests_Docker.git
 ```
 2. Open a terminal or command prompt in the extracted folder.
 ```
